@@ -1,0 +1,256 @@
+/* Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2c2222;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+}
+
+
+button {
+  box-shadow: 0px 3px 5px rgba(168, 168, 168, 0, 38);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 30%;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 768px) {
+  button {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.tasks-table {
+  margin: 0px auto 0;
+  width: 100%;
+  background-color: rgb(155, 52, 52);
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .tasks-table {
+    margin-top: 30px;
+    width: 90%;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tasks-table {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tasks-table {
+    width: 70%;
+  }
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 42px;
+    padding-right: 28px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 20px;
+  }
+}
+
+
+#add-btn {
+  background-color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  transition: 0.8s;
+  color: #8f2a2a;
+}
+
+#add-btn:hover {
+  opacity: 80%;
+  transform: scale(1.1);
+}
+
+#input_field{
+  align-items: center;
+}
+#taskInput{
+  height: 48px;
+  width: 281px;
+  border: 0px;
+  border-radius: 10px;
+  margin-left: 4px;
+  padding-right: 15px;
+  font-family: 'Tajawal', sans-serif;
+  transition: 0.8s;
+}
+#taskInput:hover{
+  opacity: 80%;
+  transform: scale(1.06);
+ 
+}
+
+::placeholder {
+  /* Add your desired styles here */
+  color: rgb(162, 162, 162);
+  padding-right: 0px;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+}
+
+@media (min-width: 768px) {
+  #add-btn:hover {
+    background-color: #dacbcb;
+    transform:scale(1.05);
+  }
+}
+
+/* 
+  TASKS TABLE
+*/
+#tasks {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 768px) {
+  #tasks {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+
+.task {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  transition: box-shadow 0.2s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+
+.task:hover {
+  box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+.done-button{
+  margin-left: 10px;
+  transition: 0.9s;
+}
+.done-button:hover{
+  transform: scale(1.06);
+}
+.delete-button{
+  transition: 0.9s;
+}
+.delete-button:hover{
+  transform: scale(1.06);
+}
+
+.containerJs{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 60px;
+  align-items: center;
+  justify-items: center;
+  padding-left:20px ;
+  padding-right: 20px;
+  border: 3px 0px #1f1f1f solid ;
+  margin: auto;
+}
+#taskList{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ol ul {
+  padding-left: 0;
+}
+#bodyContainer{
+  
+  margin-top: 60px;
+}
+
+
+
+
+/* ======================== */
+
+/* nav bare style */
+#navbarScroll{
+
+  position: absolute;
+  top: 0;
+  right: 80px;
+  padding: 10px;
+ }
+ #navBarColor{
+  background-color: #8f2a2a !important;
+ } 
+ nav {
+  direction: ltr;
+  font-family: 'Tajawal', sans-serif;
+
+ }
+ .nav-link {
+  color: rgb(255 255 255 / 65%);
+  text-decoration: none;
+}
+li .nav-link{
+  color: #e5e5e5;
+  font-family: 'Tajawal', sans-serif;
+  margin-left: 10px;
+}
+
+#logo{
+  width: 150px ;
+  cursor: pointer;
+  transition: 0.7s;
+}
+#logo:hover{
+  opacity: 70%;
+  transform: scale(1.1);
+}
